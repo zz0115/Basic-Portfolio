@@ -1,20 +1,243 @@
+/*whole webpage measurement including border in consideration*/
+
+/* * {
+	box-sizing:border-box;
+	} */
+
+	body {
+		border: 1px dotted #777777;
+		background: url("../images/background.jpg");
+		color: #777777;
+	/* font-size: 18px;
+	line-height: 34px; */
+/* 	font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+*/	
+		margin: 0;
+		width: 100%;
+		max-width: 960px;
+		margin: auto;
+		text-align: center;
+
+		}
+
 h1 {
-	color: #4aaaa5;
-	background-color: orange;
+	margin-left: 70px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
+	float: left;
+	position: absolute; /* compare to fixed and other positions*/
+	/*z-index: 99; */
 }
 
-body {
-	background-color: #4aaaa5;
+div.menu {
+	background-color: #ffffff;
+	padding: 29.6px 0 29.6px 0;
+	border-bottom: 2px solid #dddddd;
+}
+
+/*position relative property doesn't work properly*/
+/*section.menu-options {
+	right: 20px;
+	
+}*/
+
+a:link {
+	text-decoration: none;
+}
+
+a {
 	color: #777777;
 }
 
-h2 {
-	background-color: #ffffff;
+#op1 {
+	margin: 0 5px 0 650px;
+	padding-right: 10px;
+	border-right: 1px solid #dddddd;
 }
 
-/*border color: #cccccc; */
+#op2 {
+	margin: 0 5px 0 5px;
+	padding-right: 10px;
+	border-right: 1px solid #dddddd;
+}
 
-footer {
-	background-color: #666666;
+#op3 {
+	margin: 0 5px 0 5px;
+}
+/*main content*/
+div.main-content {
+	clear: both;
+	margin: auto;
+}
+
+/* main-info border color: #dddddd; */
+/*how to add background color to main-body*/
+/*.main-body {*/
+	/*background-color: blue; */
+	/*}*/
+
+	.main-info, .main-contact, .main-portfolio {
+		width: 650px;
+		float: left;
+		border: 1px solid #cccccc;
+		margin: 10px 15px 30px 15px;
+		background-color: #ffffff;
+		margin-right: 5px;
+	}
+
+
+	/*border color: #cccccc; */
+
+	h2 {
+		text-align: left;
+		color: #4aaaa5;
+		margin-top: 0;
+		margin-left: 35px;
+		margin-right: 35px;
+		padding: 20px;
+		background-color: #ffffff;
+		border-bottom: 2px solid #cccccc;
+	}
+
+	#my_Pic {
+		margin-left: 35px;
+		float:left;
+		height: 150px;
+		width: 150px;
+		margin-right: 10px;
+	}
+
+	p {
+		margin-right: 35px;
+		margin-left: 35px;
+		text-align: left;
+		line-height: 20px;
+	}
+
+	form {
+		margin-left: 60px;
+		text-align: left;
+		padding-bottom: 20px;
+	}
+
+	#name, #email {
+		width: 530px;
+	}
+
+	#msg {
+		width: 530px; 
+		height: 250px;
+	}
+
+	#submitButton {
+	margin-top: 10px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+	}
+
+.work {
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+
+.work:nth-child(even) {
+	margin-right: 60px;
+    margin-left: 90px;
+}
+/*	#hm {
+		padding: 0 50px 0 0;
+		margin-left: 100px;
+		float: left;
+		opacity: 0.8;
+	}
+
+	#rpg {
+		padding: 0 50px 0 50px;
+		margin-left: 120px;
+		margin-right: 50px;
+		float: left;
+		opacity: 0.8;
+	}
+
+	#tv {
+		clear: both;
+		margin-left: 100px;
+		float: left;
+		opacity: 0.8;
+	}
+
+	#rg {
+		float: left;
+		margin-left: 190px;
+		opacity: 0.8;
+	}
+
+	#rps {
+		clear: both;
+		float: left;
+		margin-left: 70px;
+		opacity: 0.8;
+	} */
+	/* need to pay attention next time*/
+
+	.work img {
+		opacity: 0.8;
+	}
+
+ 	.work h3 {
+		border-bottom: 0;
+		background: #4aaaa5;
+		color: #fff;
+		position: absolute;
+		padding: 10px 0 10px 0;
+		bottom: 20px;
+		line-height: 30px;
+		margin-bottom: 0;
+		font-weight: 300;
+		width: 200px;
+		text-align: center;
+	}
+	/* sidebar */
+	.connect-info {
+		float: left;
+		width: 270px;
+		height: 150px;
+		margin: 10px 0 0 0;
+		border: 1px solid #cccccc;
+		background-color: #ffffff;
+	}
+
+	aside {
+		padding: 10px;
+		font-size: 25px;
+		font-weight: bold;
+		color: #4aaaa5;
+		border-bottom: 1px solid #cccccc;
+		margin: 20px;
+	}
+
+	#gh, #lk, #st {
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	/* footer */
+	footer {
+		clear:both;
+		color: #ffffff; 
+		background-color: #666666;
+		padding: 30.6px;
+		font-size: 10px;
+		border-top: 8px solid #4aaaa5;
+	}
+#pt-body {
+	height: 779px;
 }
 
