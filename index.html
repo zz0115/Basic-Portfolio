@@ -2,31 +2,43 @@
 <html>
 <head>
 	<title>About Me</title>
+
+	<!-- <link rel = "stylesheet" href = "assets/css/reset.css"> -->
+	<link rel = "stylesheet" href = "assets/css/style.css">
+	<script src="https://use.fontawesome.com/c9c44f7d24.js"></script>
+	
 </head>
 <body>
 	<h1>Ziwei Zhang</h1>
-	<a href = "">About</a>
-	<a href = "">Portfolio</a>
-	<a href = "">Contact</a>
 
-	<div>
-		<section class = "main-info">
-			<h2>About Me</h2>
+	<div class = "menu">
+		<!-- need to use <nav> next time for major navigation links-->
+		<section class = "menu-options"> 
+			<a id = "op1" href = "index.html" target = "_blank">About</a>
+			<a id = "op2" href = "portfolio.html" target = "_blank">Portfolio</a>
+			<a id = "op3" href = "contact.html" target = "_blank">Contact</a>
 
-			<!-- dividing line -->
-
-			<img src = "My_Pic.jpg" alt = "My Picture">
-			<p> I have a background in finance and economics. Those are interesting majors, which get me to think how the economic world works in our society. </p>
-			<p> However, I want to explore more now. I chose to dive more into computer science, since I like all those logically thinking, math-related, and high-end technology stuff. Simply put it, the ability to write and understand the coding language and apply it to enhance our daily life is fascinating to me. </p>
 		</section>
+	</div>	
+	<div class = "main-content">
+			<section class = "main-info">
+				<h2>About Me</h2>
+				<!-- dividing line -->
 
-		<section class = "connect-info">
-			<aside> Connect with Me </aside>
-			<a href = "https://github.com/zz0115"><img src = "" target = "_blank">Github</a>
-			<a href = "https://www.linkedin.com/in/ziwei0115/">Linkedin<img src = ""></a>
-			<a href = "https://stackoverflow.com/users/8470276/ziwei">Stack<img src = ""></a>
-		</section>
-		
+				<img id = "my_Pic" src = "assets/images/My_Pic.jpg" alt = "My Picture">
+				<p> I have a background in finance and economics. Those are interesting majors, which get me to think about how the economic world works in our society. </p>
+				<p> Sometimes I am a little annoyed by doing similar things over and over again at work. I always like to explore more. I want to learn more about computer science, since I like logical thinking, math-related, and technology knowledge and products. I'm fascinated by the ability to write and understand the coding language and apply it to enhance our daily life. </p>
+				<p>I hope I can use this coding bootcamp as a start position to be a good programmer.</p>
+			</section>
+
+			<section class = "connect-info">
+				<aside> Connect with Me </aside>
+				<a id = "gh" href = "https://github.com/zz0115" target = "_blank"><img src = "assets/images/Github-Icon.png" alt = "Github" style = "width:50px; height:50px;"></a>
+				<a id = "lk" href = "https://www.linkedin.com/in/ziwei0115/"
+				target = "_blank"><img src = "assets/images/Linkedin-Icon.png" alt = "LinkedIn" style = "width: 50px; height:50px;"></a>
+				<a id = "st" href = "https://stackoverflow.com/users/8470276/ziwei" target = "_blank"><img src = "assets/images/Stack-Icon.png" alt = "StackOF" style = "width:50px; height:50px; "></a>
+			</section>
+
 		<footer>© Copyright 2017 Ziwei Zhang</footer>
 
 	</div>
